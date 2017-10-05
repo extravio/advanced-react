@@ -1,0 +1,43 @@
+{
+  "name": "advanced-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "pm2 start lib/server.js --watch --interpreter babel-node --name appDev",
+    "dev:stop": "pm2 stop all",
+    "dev:logs": "pm2 logs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/extravio/advanced-react.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/extravio/advanced-react/issues"
+  },
+  "homepage": "https://github.com/extravio/advanced-react#readme",
+  "devDependencies": {
+    "babel-eslint": "^8.0.1",
+    "eslint": "^4.8.0",
+    "eslint-plugin-react": "^7.4.0"
+  },
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "ejs": "^2.5.7",
+    "express": "^4.16.1",
+    "pm2": "^2.7.1"
+  },
+  "babel": {
+    "presets": [
+      "react",
+      "env",
+      "stage-2"
+    ]
+  }
+}
