@@ -2,4 +2,6 @@
 
 ## Tips
 
-async / await needs babel-polyfill 
+async / await needs babel-polyfill
+
+use NODE_PATH in package.json to avoid relative paths problems

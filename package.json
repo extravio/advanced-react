@@ -5,8 +5,9 @@
   "main": "lib/server.js",
   "scripts": {
     "test": "jest --watch",
-    "dev": "pm2 start lib/server.js --watch --interpreter babel-node --name appDev",
+    "dev": "NODE_PATH=./lib pm2 start lib/server.js --watch --interpreter babel-node --name appDev",
     "dev:stop": "pm2 stop all",
+    "dev:delete": "pm2 delete appDev",
     "dev:logs": "pm2 logs",
     "webpack": "webpack -wd"
   },
