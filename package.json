@@ -23,6 +23,9 @@
   "homepage": "https://github.com/extravio/advanced-react#readme",
   "devDependencies": {
     "babel-eslint": "^8.0.1",
+    "enzyme": "^3.1.0",
+    "enzyme-adapter-react-16": "^1.0.1",
+    "enzyme-react-16-adapter-setup": "^0.1.0",
     "eslint": "^4.8.0",
     "eslint-plugin-react": "^7.4.0",
     "jest": "^21.2.1",
