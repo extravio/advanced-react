@@ -20,3 +20,5 @@ To fix the test we can use shallow rendering instead of tree rendering so that o
 ## Higher order component
 
 Generic function that generates a Component to provide any component with the store object so that it doesn't have to deal with the context API
+
+Notice pattern: storeProvider(extraProps)(...) // react-redux connect(mapStateToProps, mapDispatchToProps)(...)
