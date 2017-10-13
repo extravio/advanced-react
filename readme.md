@@ -16,3 +16,7 @@ in StateApi, lookupAuthor and getState are declared as class properties so we do
 
 Using the Context API breaks the ArticleListTest because the store is no longer passed to the ArticleItem component as a prop.
 To fix the test we can use shallow rendering instead of tree rendering so that only the ArticleList component is rendered/tested (using Enzyme).
+
+## Higher order component
+
+Generic function that generates a Component to provide any component with the store object so that it doesn't have to deal with the context API
